@@ -1,0 +1,8 @@
+table, td, tr {border: 2px solid;}
+
+.matiere{
+    border-color: #fe0000;
+    text-align: left;
+    vertical-align: top;
+}
+.vert{border-color: #14c850;}

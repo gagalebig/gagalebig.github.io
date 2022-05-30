@@ -1,0 +1,74 @@
+a:link {
+    color: #ccc;
+  }
+  a:visited {
+    color: #cdff50;
+  }
+  a:hover {
+    color: #8ebf42;
+  }
+  a:active {
+    color: #800000;
+  }
+    body{
+        height: 800px;
+        background-image: url("image/slashes.png")
+    }
+    h1{
+        color: red;
+        border: 10px groove rgb(236, 86, 86);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    h2{
+        color: rgb(255, 255, 255);
+        font-family: 'Courier New', Courier, monospace;
+    }
+    h3{
+        color: rgb(201, 234, 15);
+        font-family: 'Courier New', Courier, monospace;
+    }
+    h4{
+        color: rgb(210, 63, 0);
+        font-family: 'Courier New', Courier, monospace;
+    }
+    table{
+        color: rgb(190, 234, 15);
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    img {
+        background: rgb(255, 126, 126);
+        margin: auto;
+        border-color: rgb(65, 60, 60) rgb(201, 234, 15);
+        border-image: none;
+        border-radius: 50px 0 50px 0;
+        border-style: solid;
+        border-width: 20px;
+        
+      }
+      footer {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        background-color: #323232;
+        color: #fff;
+    }
+    
+    img {
+      -webkit-transition: all 0.2s;
+      -moz-transition: all 0.2s;
+      -ms-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s;
+ }
+ img:hover {
+      transform:scale(0.8);
+ }
+
+
+
+
+
+
+
+    
