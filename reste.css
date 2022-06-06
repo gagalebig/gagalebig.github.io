@@ -1,0 +1,48 @@
+body{
+    height: 800px;
+    background-image: url("image/goutte.jpg")
+    }
+    h1{
+        color: rgb(0, 116, 21);
+        border: 10px groove rgb(16, 140, 26);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    h2{
+        color: rgb(150, 150, 150);
+        font-family: 'Courier New', Courier, monospace;
+    }
+    h3{
+        color: rgb(98, 113, 7);
+        font-family: 'Courier New', Courier, monospace;
+    }
+    h4{
+        color: rgb(72, 179, 75);
+        font-family: 'Courier New', Courier, monospace;
+    }
+    table{
+        color: rgb(94, 102, 8);
+        font-family: 'Courier New', Courier, monospace;
+    }
+    a:link {
+    color: #ccc;
+      }
+    a:visited {
+    color: #042a3e;
+      }
+    a:hover {
+    color: #064c72;
+   } 
+    a:active {
+    color: #800000;
+    }
+
+    img {
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -ms-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        transition: all 0.2s;
+   }
+   img:hover {
+        transform:scale(0.8);
+   }
