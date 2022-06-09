@@ -1,5 +1,3 @@
-<h3><a href="script.js">VERSION ORDINATEUR</a></h3>
-
 var img_1;
 //var img_2;
 var smiley_sprite;
