@@ -42,7 +42,7 @@ function setup() {
 }
 function draw() {
     background(240,240,240);
-    v=score*0.9+30
+    v=score*0.9+45
     group_smiley.bounce(wall_g);
     group_smiley.bounce(wall_d);
     group_smiley.bounce(wall_b);
