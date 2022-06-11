@@ -10,11 +10,12 @@ function preload() {
 }
 function setup() {
     createCanvas(800,600);
+    d=45;    
     textSize(32);
-    smiley_sprite=createSprite(random(20,380),random(20,280));
+    smiley_sprite=createSprite(random(20,380),random(120,280));
     smiley_sprite.addImage(img_1);
     smiley_sprite.mass=0;
-    smiley_sprite.setVelocity(5,5);
+    smiley_sprite.setSpeed(1, 45);
     group_smiley=new Group();
     for (j=0;j<4;j++){
         for (i=0;i<15;i++){
@@ -35,10 +36,13 @@ function setup() {
     wall_b.immovable=true;
     group_smiley.immovable=true;
     pad_sprite.immovable=true;
+
 }
 function draw() {
+     
     background(240,240,240);
-    v=score*12+3
+    v=score*0.8+3
+    smiley_sprite.setSpeed(v);
     group_smiley.bounce(wall_g);
     group_smiley.bounce(wall_d);
     group_smiley.bounce(wall_b);
@@ -51,14 +55,15 @@ function draw() {
     group_smiley.bounce(smiley_sprite);
 //    smiley_sprite.overlap(group_smiley,contact);
 //    smiley_sprite.overlap(wall_b,perdu);
-    pad_sprite.bounce(smiley_sprite)
-    text("Score : "+score,10,550)
+    pad_sprite.bounce(smiley_sprite,rebond)
+    text("Score : "+score+"o = "+smiley_sprite.getDirection(),10,550)
 //    text("Score : "+nul,10,600)
     drawSprites();
     pad_sprite.position.x = mouseX
     if(nul>0) { text("T'AS PERDU",300,500);}
     
 }
+
 function contact(sprite_1,sprite_2){
     score=score+1;
     sprite_2.remove();
@@ -69,4 +74,12 @@ function contact(sprite_1,sprite_2){
 function perdu(sprite_1,sprite_2){
     nul += 1
  
+}
+
+function rebond(sprite_1,sprite_2){
+      if (pad_sprite.rebond + 500 < millis()){
+d=d+(-smiley_sprite.position.x + pad_sprite.position.x)*3
+         smiley_sprite.setSpeed(v,d);
+  }
+  pad_sprite.rebond = millis()
 }
